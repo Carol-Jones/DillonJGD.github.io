@@ -65,7 +65,7 @@ function mainloop()
         break;
 
         case 2: //ゲームオーバー
-        if(tmr < 30 * 2 && tmr % 5 == 1) setEffect(ssX + rnd(120) -60, ssy + rnd(80) - 40, 9);
+        if(tmr < 30 * 2 && tmr % 5 == 1) setEffect(ssX + rnd(120) -60, ssY + rnd(80) - 40, 9);
         moveMissile();
         moveObject();
         drawEffect();
@@ -316,7 +316,7 @@ function moveObject()
                     {
                         idx = 2;
                         tmr = 0;
-                        stopBGM();
+                        stopBgm();
                     }
                 }
                 if(objType[i] == 2)//アイテム
