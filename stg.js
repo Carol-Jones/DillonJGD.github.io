@@ -2,15 +2,15 @@
 function setup()
 {
     canvasSize(1200,720);
-    loadImg(0, "image/bg.png");
-    loadImg(1, "image/spaceship.png");
-    loadImg(2, "image/missile.png");
-    loadImg(3, "image/explode.png");
-    for(var i = 0; i <= 4; i++) loadImg(4 + i, "image/enemy" + i + ".png");
-    for(var i = 0; i <= 2; i++) loadImg(9 + i, "image/item" + i + ".png");
-    loadImg(12, "image/laser.png");
-    loadImg(13, "image/title_ss.png");
-    loadSound(0, "sound/bgm.m4a");
+    loadImg(0, "image/stg/bg.png");
+    loadImg(1, "image/stg/spaceship.png");
+    loadImg(2, "image/stg/missile.png");
+    loadImg(3, "image/stg/explode.png");
+    for(var i = 0; i <= 4; i++) loadImg(4 + i, "image/stg/enemy" + i + ".png");
+    for(var i = 0; i <= 2; i++) loadImg(9 + i, "image/stg/item" + i + ".png");
+    loadImg(12, "image/stg/laser.png");
+    loadImg(13, "image/stg/title_ss.png");
+    loadSound(0, "sound/stg/bgm.m4a");
     initShip();
     initMissile();
     initObject();
