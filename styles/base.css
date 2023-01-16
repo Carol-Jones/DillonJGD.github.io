@@ -1,0 +1,47 @@
+body {
+    background-color: grey;
+}
+
+h1 {
+    background-color:black;
+    color: blue;
+    border: 10px;
+    border-style: groove;
+    text-align: center;
+    width: 50%;
+    margin-left: 23%;
+}
+
+h2, h3 {
+    color:blue;
+    background-color: black;
+    padding: 5px;
+    width: 50%;
+    border: 10px;
+    border-style: groove;
+    margin-left: 22%;
+    text-align: center;
+}
+
+
+p {
+    color: aliceblue;
+    background-color: black;
+    width: 50%;
+    padding: 25px;
+    border: 10px;
+    border-style: groove;
+    margin-left: 20%;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    margin-left: 27%;
+}
+
+img {
+    border: 10px;
+    border-style: groove;
+    margin-left: 27%;
+}

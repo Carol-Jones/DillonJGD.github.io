@@ -9,7 +9,7 @@ th@wwsft.com ワールドワイドソフトウェア 廣瀬
 */
 
 // ---------- グローバル変数 ----------
-var SYS_VER = "Ver.20200227";
+var SYS_VER = "Ver.20200402";
 var DEBUG = false;
 
 //端末の種類
@@ -159,6 +159,7 @@ function onKey(e) {
 	if(snd_init == 0) loadSoundSPhone();//【重要】サウンドの読み込み
 	inkey = e.keyCode;
 	key[e.keyCode]++;
+//log(inkey);
 }
 
 function offKey(e) {
@@ -303,6 +304,7 @@ function playSE(n) {
 	if(isBgm == 2) return;
 	if(wait_se == 0) {
 		seNo = n;
+		soundfile[n].currentTime = 0;
 		soundfile[n].loop = false;
 		soundfile[n].play();
 		wait_se = 3;//ブラウザに負荷をかけないため連続して流さないようにする
@@ -456,13 +458,22 @@ function sTri(x0, y0, x1, y1, x2, y2, col) {//三角（線）
 	bg.stroke();
 }
 
-function fPol(xy, col) {//多角形
+function fPol(xy, col) {//多角形（塗り潰し）
 	bg.fillStyle = col;
 	bg.beginPath();
 	bg.moveTo(xy[0], xy[1]);
 	for(var i=2; i<xy.length; i+=2) bg.lineTo(xy[i], xy[i+1]);
 	bg.closePath();
 	bg.fill();
+}
+
+function sPol(xy, col) {//多角形（線）
+	bg.strokeStyle = col;
+	bg.beginPath();
+	bg.moveTo(xy[0], xy[1]);
+	for(var i=2; i<xy.length; i+=2) bg.lineTo(xy[i], xy[i+1]);
+	bg.closePath();
+	bg.stroke();
 }
 
 // ---------- 描画２ 画像 ----------
