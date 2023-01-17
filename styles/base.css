@@ -1,5 +1,5 @@
 body {
-    background-color: grey;
+    background-color: #ccc;
 }
 
 h1 {
@@ -9,7 +9,8 @@ h1 {
     border-style: groove;
     text-align: center;
     width: 50%;
-    margin-left: 23%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2, h3 {
@@ -19,7 +20,8 @@ h2, h3 {
     width: 50%;
     border: 10px;
     border-style: groove;
-    margin-left: 22%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
@@ -31,17 +33,27 @@ p {
     padding: 25px;
     border: 10px;
     border-style: groove;
-    margin-left: 20%;
-}
+    margin-left: auto;
+    margin-right: auto;
+} 
 
 a {
+    display: block;
+    width: 200px;
+    background-color: blue;
     text-decoration: none;
     color:white;
-    margin-left: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    border: inset 10px rgb(71, 75, 82);
 }
 
 img {
+    display: block;
     border: 10px;
     border-style: groove;
-    margin-left: 27%;
+    margin-left: auto;
+    margin-right: auto;
 }
